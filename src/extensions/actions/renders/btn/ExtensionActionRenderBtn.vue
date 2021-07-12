@@ -33,7 +33,6 @@ import { Component, Prop } from 'vue-property-decorator'
 import { Editor } from 'tiptap'
 import ExtensionActionRenderBtnOptionsInterface from './ExtensionActionRenderBtnOptionsInterface'
 import TextIcon from '~/extensions/nativeExtensions/icons/TextIcon'
-import VuetifyIcon from '~/extensions/nativeExtensions/icons/VuetifyIcon'
 import IconInterface from '~/extensions/nativeExtensions/icons/IconInterface'
 import { VTooltip, VBtn, VIcon } from 'vuetify/lib'
 import ConsoleLogger from '~/logging/ConsoleLogger'
@@ -85,7 +84,7 @@ export default class ExtensionActionRenderBtn extends Vue {
   }
 
   get isVuetifyIcon () {
-    return this.buttonIcon instanceof VuetifyIcon
+    return true
   }
 
   get tooltipText () {
