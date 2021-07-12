@@ -19,7 +19,6 @@ import Vue from 'vue'
 import { Component, Prop } from 'vue-property-decorator'
 import ExtensionActionInterface from '~/extensions/actions/ExtensionActionInterface'
 import ExtensionActionRenderBtnComponent from '~/extensions/actions/renders/btn/ExtensionActionRenderBtn.vue'
-import ExtensionActionRenderBtn from '~/extensions/actions/renders/btn/ExtensionActionRenderBtn.ts'
 import { Editor } from 'tiptap'
 
 export const PROPS = {
@@ -62,7 +61,7 @@ export default class ActionsRender extends Vue {
   PROPS = PROPS
 
   isBtn (action: ExtensionActionInterface): boolean {
-    return action.render instanceof ExtensionActionRenderBtn
+    return true
   }
 }
 </script>
